@@ -39,13 +39,13 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Photo grid -->
   <div class="w3-row">
     <div style="display: flex">
-      <img src="./images/randomImage1.jpg" style="width:100%" onclick="onClick(this)" alt="Leonidas placeholder">
-      <img src="./images/randomImage2.jpg" style="width:100%; float: right;" onclick="onClick(this)" alt="Andrianos placeholder">
+      <img src="./images/randomImage1.jpg" data-video="https://www.youtube.com/embed/DuX2MkflGYs" style="width:100%" onclick="onClick(this)" alt="Leonidas placeholder">
+      <img src="./images/randomImage2.jpg" data-video="https://www.youtube.com/embed/DuX2MkflGYs" style="width:100%; float: right;" onclick="onClick(this)" alt="Andrianos placeholder">
     </div>
 
     <div style="display: flex">
-      <img src="./images/randomImage3.jpg" style="width:100%" onclick="onClick(this)" alt="Dafne placeholder">
-      <img src="./images/randomImage4.jpg" style="width:100%; float: right;" onclick="onClick(this)" alt="Konstantinos placeholder">
+      <img src="./images/randomImage3.jpg" data-video="https://www.youtube.com/embed/DuX2MkflGYs" style="width:100%" onclick="onClick(this)" alt="Dafne placeholder">
+      <img src="./images/randomImage4.jpg" data-video="https://www.youtube.com/embed/DuX2MkflGYs" style="width:100%; float: right;" onclick="onClick(this)" alt="Konstantinos placeholder">
     </div>
   </div>
 
@@ -67,6 +67,14 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption"></p>
+      <iframe
+        id="iframe01"
+        width="560"
+        height="315"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 
@@ -171,14 +179,14 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h3>BLOG POSTS</h3>
         <ul class="w3-ul">
           <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
-            <span>Sed mattis nunc</span>
+            <img src="./images/blogpostimage2.jpg" class="w3-left w3-margin-right" style="width:50px; height:50px;">
+            <span class="w3-large">How</span><br>
+            <span>to have fun while working</span>
           </li>
           <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
-            <span>Praes tinci sed</span>
+            <img src="./images/blogpostimage1.jpg" class="w3-left w3-margin-right" style="width:50px; height:50px;">
+            <span class="w3-large">How</span><br>
+            <span>to stay a kid</span>
           </li> 
         </ul>
       </div>
@@ -186,17 +194,17 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-third">
         <h3>POPULAR TAGS</h3>
         <p>
-          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+          <span class="w3-tag w3-black w3-margin-bottom">Web design</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Signalkids</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Education</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Software</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Athens</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Thesignalgroup</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Workplace</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shipping</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fun</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Houston</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singapore</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
         </p>
       </div>
     </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="Signal Kids" target="_blank" class="w3-hover-opacity">signalkids ©</a></div>
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="" title="Signal Kids" target="_blank" class="w3-hover-opacity">signalkids</a> © 2019 -2020</div>
 
 <!-- End page content -->
 </div>
@@ -217,7 +225,7 @@ function w3_close() {
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
+  document.getElementById("iframe01").src = element.dataset.video;
   captionText.innerHTML = element.alt;
 }
 
